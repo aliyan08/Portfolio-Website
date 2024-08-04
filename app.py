@@ -16,7 +16,7 @@ PAGE_TITLE = "Aliyan Sayani | Portfolio"
 PAGE_ICON = ":wave:"
 NAME = "Aliyan Sayani"
 DESCRIPTION = """
-As a Computer Science student with a deep interest in Artificial Intelligence and Data Science, I am a curious and analytical individual who is constantly fascinated by the possibilities of technology. I have always been passionate about programming and have honed my skills in Java, SQL, python, and C++ through various semester projects of Management Systems, Data Science, Data Mining and Machine Learning, always pushing myself to excel in my field of study."""
+As a Computer Science student with a deep interest in Artificial Intelligence and Data Science, fascinated by the possibilities of technology, been passionate about programming and have honed skills in Java, SQL, python, and C++."""
 EMAIL = "alisayani03@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/aliyan-sayani-91a1471b9/",
@@ -64,6 +64,25 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
     cols[index].write(f"[{platform}]({link})")
 
 
+# --- Education ---
+st.write('\n')
+st.subheader("Education")
+st.write("---")
+st.write("🎓", "**Bachelor of Computer Science |  Bahria University**")
+st.write("Excpected to end in Feb 2025")
+st.write("---")
+st.write("🎓", "**Semester Exchange Program | Istanbul Technical University, Turkey**")
+st.write("Experience of Semster Exchange program for Fall-2023 semster")
+st.write("**Major Courses**")
+st.write(""" 
+- Machine Learning
+- Introduction to Data Science
+- Data Mining
+- Robotics
+- Bioinformatics
+         """)
+st.write("---")
+
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write('\n')
 st.subheader("Experience & Qulifications")
@@ -106,3 +125,7 @@ st.subheader("Projects & Accomplishments")
 st.write("---")
 for project, link in PROJECTS.items():
     st.write(f"[{project}]({link})")
+st.write("---")
+st.subheader("Achievements")
+st.write("🏆 Coder's Clash - 2024 | Winner of Speed Coding Competition")
+st.write("🏆 Edvon Robotics League - 2018 | Runner up of Edvon Robotics League")
